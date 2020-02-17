@@ -46,12 +46,12 @@
 		</dependency>
 
 
-	<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>gherkin</artifactId>
-    <version>4.1.2</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>4.1.2</version>
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
@@ -63,23 +63,21 @@
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-		<!-- <dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-picocontainer</artifactId>
-			<version>4.7.2</version>
-		</dependency>
- -->
+		<!-- <dependency> <groupId>io.cucumber</groupId> <artifactId>cucumber-picocontainer</artifactId> 
+			<version>4.7.2</version> </dependency> -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.4.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
-			<version>3.4.0</version>
+			<version>3.141.59</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -111,11 +109,8 @@
 
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
-		<!-- <dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.5</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-testng</artifactId> 
+			<version>1.2.5</version> </dependency> -->
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -129,6 +124,19 @@
 			<artifactId>poi</artifactId>
 			<version>3.7</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
@@ -161,29 +169,13 @@
 
 			<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 
-		<!-- 	<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>3.15.0</version>
-				<executions>
-					<execution>
-						<id>execution</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<projectName>cucumber-jvm-example</projectName>
-							<outputDirectory>${project.build.directory}/target/myreport</outputDirectory>
-							<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput>
-							<enableFlashCharts>false</enableFlashCharts>
-							<skippedFails>true</skippedFails>
-						</configuration>
-
-
-					</execution>
-				</executions>
-			</plugin> -->
+			<!-- <plugin> <groupId>net.masterthought</groupId> <artifactId>maven-cucumber-reporting</artifactId> 
+				<version>3.15.0</version> <executions> <execution> <id>execution</id> <phase>verify</phase> 
+				<goals> <goal>generate</goal> </goals> <configuration> <projectName>cucumber-jvm-example</projectName> 
+				<outputDirectory>${project.build.directory}/target/myreport</outputDirectory> 
+				<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput> 
+				<enableFlashCharts>false</enableFlashCharts> <skippedFails>true</skippedFails> 
+				</configuration> </execution> </executions> </plugin> -->
 		</plugins>
 
 	</build>
