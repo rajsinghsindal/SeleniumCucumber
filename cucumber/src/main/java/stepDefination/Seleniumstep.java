@@ -11,6 +11,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class Seleniumstep {
@@ -23,7 +24,9 @@ static	WebDriver driver;
 	public void user_is_on_Home_Page() throws Throwable {
 
       
-        driver = new ChromeDriver();
+       // driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
      
        
 	}
