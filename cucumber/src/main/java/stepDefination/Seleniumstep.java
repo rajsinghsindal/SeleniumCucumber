@@ -6,12 +6,13 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class Seleniumstep {
@@ -25,9 +26,15 @@ static	WebDriver driver;
 
       
        // driver = new ChromeDriver();
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-     
+		//WebDriverManager.chromedriver().setup();
+		//driver = new ChromeDriver();
+		
+		
+		driver= new HtmlUnitDriver();
+		
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+	    java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+
        
 	}
 	
