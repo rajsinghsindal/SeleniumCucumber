@@ -29,14 +29,14 @@ static	WebDriver driver;
       
       // driver = new ChromeDriver();
        
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
+		//driver = new ChromeDriver();
 		
 		//System.setProperty(key, value)
-	//driver= new HtmlUnitDriver();
+	driver= new HtmlUnitDriver();
 		
-	//	java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
-	 //   java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+	    java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
 
        
 	}
