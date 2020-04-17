@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11487" started-at="2020-01-25T13:56:33 IST" finished-at="2020-01-25T13:56:44 IST">
+  <suite name="Suite" duration-ms="18754" started-at="2020-04-16T15:34:56 IST" finished-at="2020-04-16T15:35:15 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4e41089d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@276438c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="11487" started-at="2020-01-25T13:56:33 IST" finished-at="2020-01-25T13:56:44 IST">
+    <test name="Test" duration-ms="18754" started-at="2020-04-16T15:34:56 IST" finished-at="2020-04-16T15:35:15 IST">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@4e41089d]" name="setUpClass" is-config="true" duration-ms="95" started-at="2020-01-25T13:56:33 IST" finished-at="2020-01-25T13:56:33 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@276438c9]" name="setUpClass" is-config="true" duration-ms="86" started-at="2020-04-16T15:34:56 IST" finished-at="2020-04-16T15:34:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4e41089d]" name="runScenario" duration-ms="6013" started-at="2020-01-25T13:56:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-01-25T13:56:39 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@276438c9]" name="runScenario" duration-ms="13039" started-at="2020-04-16T15:34:57 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-16T15:35:10 IST">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4e41089d]" name="runScenario" duration-ms="5264" started-at="2020-01-25T13:56:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-01-25T13:56:44 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@276438c9]" name="runScenario" duration-ms="5527" started-at="2020-04-16T15:35:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-16T15:35:15 IST">
           <params>
             <param index="0">
               <value>
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@4e41089d]" name="tearDownClass" is-config="true" duration-ms="65" started-at="2020-01-25T13:56:44 IST" finished-at="2020-01-25T13:56:44 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@276438c9]" name="tearDownClass" is-config="true" duration-ms="51" started-at="2020-04-16T15:35:15 IST" finished-at="2020-04-16T15:35:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
