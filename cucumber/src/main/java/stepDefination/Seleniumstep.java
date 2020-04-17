@@ -8,10 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -25,15 +27,16 @@ static	WebDriver driver;
 	public void user_is_on_Home_Page() throws Throwable {
 
       
-       // driver = new ChromeDriver();
-		//WebDriverManager.chromedriver().setup();
-		//driver = new ChromeDriver();
+      // driver = new ChromeDriver();
+       
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		
+		//System.setProperty(key, value)
+	//driver= new HtmlUnitDriver();
 		
-		driver= new HtmlUnitDriver();
-		
-		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
-	    java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+	//	java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+	 //   java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
 
        
 	}
@@ -50,7 +53,9 @@ static	WebDriver driver;
 @And("^Customer enters UserName as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
 public void customer_enters_UserName_as_and_Password_as(String arg1, String arg2) throws Throwable {
 	driver.findElement(By.id("user_login")).sendKeys(arg1);
+	//Reporter.addStepLog("Username Entered");
 	driver.findElement(By.id("user_pass")).sendKeys(arg2);
+	//Reporter.addScenarioLog("Login Passsword Entered");
 	driver.findElement(By.id("wp-submit")).click();
 	
 }
@@ -98,7 +103,7 @@ public void customer_enters_UserName_as_and_Password_as(String arg1, String arg2
 
 	@Then("^Message displayed Login Successfully$")
 	public void message_displayed_Login_Successfully() throws Throwable {
-
+		//Reporter.addScenarioLog("Login Successfully");
 		System.out.println("Login Successfully");
 		
 	driver.close();
